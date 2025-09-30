@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "start": "python webpage_monitor.py"
-  }
-}
