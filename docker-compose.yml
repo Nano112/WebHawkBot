@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  webhawkbot:
+    build: .
+    container_name: webhawkbot
+    restart: unless-stopped
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+    volumes:
+      - ./data:/app/data
+      - ./monitor_config.json:/app/monitor_config.json
+      - ./page_hashes.json:/app/page_hashes.json
+    networks:
+      - webhawkbot_network
+
+networks:
+  webhawkbot_network:
+    driver: bridge

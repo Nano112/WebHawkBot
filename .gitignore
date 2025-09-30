@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+.vscode
+.history
+
+# WebHawkBot specific
+.env.local
+.env.production
+page_hashes.json
+monitor_config.json
+data/
+logs/
+docker-data/
