@@ -1,0 +1,5 @@
+[start]
+cmd = "python webpage_monitor.py"
+
+[variables]
+PYTHONUNBUFFERED = "1"

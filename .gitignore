@@ -217,3 +217,9 @@ monitor_config.json
 data/
 logs/
 docker-data/
+
+# Don't ignore deployment files
+!Procfile
+!start.sh
+!nixpacks.toml
+!package.json
