@@ -1,1 +1,1 @@
-web: python webpage_monitor.py
+web: python3 webpage_monitor.py
